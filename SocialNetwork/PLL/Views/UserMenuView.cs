@@ -46,11 +46,13 @@ namespace SocialNetwork.PLL.Views
                     case "2":
                         {
                             Program.userDataUpdateView.Show(user);
+                            user = userService.FindById(user.Id);
                             break;
                         }
                     case "3":
                         {
                             Program.friendAddingView.Show(user);
+                            user = userService.FindById(user.Id);
                             break;
                         }
                     case "4":
@@ -61,6 +63,7 @@ namespace SocialNetwork.PLL.Views
                     case "5":
                         {
                             Program.messageSendingView.Show(user);
+                            user = userService.FindById(user.Id);
                             break;
                         }
                     case "6":

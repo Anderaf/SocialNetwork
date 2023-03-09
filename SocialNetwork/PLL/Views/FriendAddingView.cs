@@ -13,7 +13,11 @@ namespace SocialNetwork.PLL.Views
 {
     public class FriendAddingView
     {
-        UserService userService = new UserService();
+        UserService userService;
+        public FriendAddingView(UserService userService)
+        {
+            this.userService = userService;
+        }
         public void Show(User user)
         {
             Console.Write("Введите почтовый адрес друга: ");

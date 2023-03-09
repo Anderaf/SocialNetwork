@@ -36,7 +36,7 @@ namespace SocialNetwork
             userMenuView = new UserMenuView(userService);
             userOutcomingMessageView = new UserOutgoingMessageView();
             userFriendsView = new UserFriendsView();
-            friendAddingView = new FriendAddingView();
+            friendAddingView = new FriendAddingView(userService);
 
             while (true)
             {
