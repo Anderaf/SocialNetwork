@@ -10,12 +10,12 @@ namespace SocialNetwork.PLL.Views
 {
     public class UserFriendsView
     {
-        public void Show(IEnumerable<Friend> friends)
+        public void Show(IEnumerable<User> friends)
         {
             Console.WriteLine("Друзья:");
             foreach (var friend in friends)
             {
-                Console.WriteLine(friend.FriendEmail);
+                Console.WriteLine(friend.Email);
             }
             Console.WriteLine();
         }

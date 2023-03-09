@@ -19,7 +19,7 @@ namespace SocialNetwork.BLL.Models
 
         public IEnumerable<Message> IncomingMessages { get; }
         public IEnumerable<Message> OutgoingMessages { get; }
-        public IEnumerable<Friend> Friends { get; }
+        public IEnumerable<User> Friends { get; }
 
         public User(
             int id,

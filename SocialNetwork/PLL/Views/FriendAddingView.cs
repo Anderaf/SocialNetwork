@@ -30,8 +30,6 @@ namespace SocialNetwork.PLL.Views
                 };
 
                 userService.AddFriend(friendAddingData);
-
-                user = userService.FindById(user.Id);
                 
                 SuccessMessage.Show("Друг успешно добавлен!");
             }

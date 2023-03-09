@@ -123,8 +123,8 @@ namespace SocialNetwork.BLL.Services
                 friend_id = userEntity.id
             };
 
-            if (friendRepository.Create(friendEntity) == 0) 
-                throw new Exception()
+            if (friendRepository.Create(friendEntity) == 0)
+                throw new Exception();
         }
 
         private User ConstructUserModel(UserEntity userEntity)
